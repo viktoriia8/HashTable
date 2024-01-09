@@ -10,8 +10,7 @@ public:
 		if (std::is_arithmetic<T>::value)
 		{
 			this->value = static_cast<T>(rand());
-		}
-		else {
+		}else{
 			char randomChar = 'a' + (rand() % 26);
 			this->value = static_cast<T>(randomChar);
 		}

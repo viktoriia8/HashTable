@@ -58,7 +58,25 @@ class hash_table : public DynamicArray < List < hash_table_entry < int >* >* >
 		return key;
 	};// klucze losowe length - znakowe 
 
-	hash_table_entry <T>* get(string key) {};
+	hash_table_entry <T>* get(string key) {
+		/*int hash = hash_function(key);
+		int i = 0;
+		while (this->array[hash]!=NULL){
+			hash_table_entry < T >* current = findNodeNr(i)
+
+			if(current->key == key){
+				return current;
+			}else {
+			i++;
+			hash_table_entry < T >* current1 = findNodeNr(i);
+			current = current1;
+			if (current == NULL) {
+				return NULL;
+				}	
+			}
+		}
+		return NULL;*/
+	};
 	void print_stats() {};
 	void clear() {};
 	// funkcja haszujaca
